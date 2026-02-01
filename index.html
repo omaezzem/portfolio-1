@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبدالله العلاوي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo" data-ar="عبدالله العلاوي" data-en="Abdullah Al-Alawi">
+                عبدالله العلاوي
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#story" data-ar="قصتي" data-en="My Story">قصتي</a></li>
+                <li><a href="#works" data-ar="أعمالي" data-en="My Works">أعمالي</a></li>
+                <li><a href="#notes" data-ar="لفتة" data-en="Notes">لفتة</a></li>
+                <li><a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                        <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                        <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+                    </svg>
+                </button>
+
+                <div class="lang-switch">
+                    <button onclick="setLang('ar')" class="lang-btn active" id="btn-ar">ar</button>
+                    <button onclick="setLang('en')" class="lang-btn" id="btn-en">en</button>
+                </div>
+
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="hero.png" alt="عبدالله العلاوي">
+                    </div>
+                    
+                    <div class="hero-text">
+                        <p class="greeting" data-ar="أهلاً معك" data-en="Welcome! It's">أهلاً معك</p>
+                        <h1 data-ar="عبدالله العلاوي" data-en="Abdullah Al-Alawi">عبدالله العلاوي</h1>
+                        <p class="description" data-ar="طبيب أسنان ومؤسس مجتمع مسافة، أعمل على تحسين جودة حياتي اليومية
+وأشارك معك توثيق الرحلة بمواقع التواصل الاجتماعي ." data-en="A dentist who founded Masafah Community. I work to enhance the quality of my daily life and share it with you via social media platforms.">
+                            طبيب أسنان ومؤسس مجتمع مسافة، أعمل على تحسين جودة حياتي اليومية<br>
+                            وأشارك معك توثيق الرحلة بمواقع التواصل الاجتماعي.
+                        </p>
+                        
+                        <a href="#contact" class="cta-btn" data-ar="للمزيد" data-en="Learn More">للمزيد</a>
+                        
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/abdullah-yw" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2" width="16" height="16">
+                                    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.1h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.2c0-1.7-.03-3.9-2.37-3.9-2.37 0-2.74 1.87-2.74 3.8V24h-5V8z"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://instagram.com/Abdullah_yw" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+
+                            <a href="mailto:Abdullah@msafh.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://youtube.com/channel/UCUdtq-Fvlw7_NjzduNTZsbg" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://x.com/Abdullah_yw" target="_blank" rel="noopener noreferrer" aria-label="X">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://www.snapchat.com/add/abdullah_yw?share_id=MDQ0Qjk0&locale=en_SA@calendar=gregorian" target="_blank" rel="noopener noreferrer" aria-label="Snapchat">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.177-.052-.177-.013-.239.153-.465.407-.525 3.236-.54 4.732-3.879 4.792-4.013l.016-.031c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://tiktok.com/@abdullh_yw" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                </svg>
+                            </a>
+
+                            <a href="https://api.whatsapp.com/send?phone=966533699194" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Story Section -->
+        <section id="story" class="story-section">
+            <div class="container">
+                <h2 class="section-title" data-ar="قصتي" data-en="My Story">قصتي</h2>
+                
+                <div class="story-wrapper">
+                    <div class="story-scroll">
+                        <div class="story-card">
+                            <p class="story-text" data-ar="حياااك الله من جديد! معك عبدالله العلاوي، طبيب أسنان سعودي. وفي الوقت الحالي أعمل يوميًّا على تحسين حياتي. 🚀 صحيح أنّ رحلة التحسين شاقّة وغير منتهية، ولكنّها أيضًا ممتعة! وبوجودك معي، فإنّ التأثير يتعداني ويصل إلى الجميع… وهذا هو الهدف الحقيقي من كل شيء!" data-en="Welcome again! It's Abdullah Al-Alawi, a Saudi dentist. Currently, I am working on improving my life daily. 🚀 It's true that self-improvement is a tough and never-ending journey, but it's also enjoyable! And having you by my side, the impact extends far beyond myself, which is the actual goal of this endeavor!">
+                                حياااك الله من جديد! معك عبدالله العلاوي، طبيب أسنان سعودي.<br><br>
+                                وفي الوقت الحالي أعمل يوميًّا على تحسين حياتي. 🚀<br><br>
+                                صحيح أنّ رحلة التحسين شاقّة وغير منتهية، ولكنّها أيضًا ممتعة!<br>
+                                وبوجودك معي، فإنّ التأثير يتعداني ويصل إلى الجميع… وهذا هو الهدف الحقيقي من كل شيء!
+                            </p>
+                        </div>
+
+                        <div class="story-milestone">
+                            <h3 data-ar="• أهمّ محطات الرحلة:" data-en="• Significant Milestones:">• أهمّ محطات الرحلة:</h3>
+                            <ul>
+                                <li data-ar="تأسيس مجتمع مسافة، الذي يهدف إلى تقريب المسافة بين شخصيتك المستقبلية والحالية." data-en="Founding Masafah Community, bridging the gap between your future and present selves.">
+                                    تأسيس مجتمع مسافة، الذي يهدف إلى تقريب المسافة بين شخصيتك المستقبلية والحالية.
+                                </li>
+                                <li data-ar="تأسيس مبادرة 'أنت أنا'، التي ساعدت آلاف الطلاب أكاديميًا. 🎓" data-en="Founding 'Anta Ana' initiative, helping thousands of students academically. 🎓">
+                                    تأسيس مبادرة "أنت أنا"، التي ساعدت آلاف الطلاب أكاديميًا. 🎓
+                                </li>
+                                <li data-ar="التخرّج من برنامج قمم لتمكين القيادات الواعدة." data-en="Graduation from Qimam program for empowering future leaders.">
+                                    التخرّج من برنامج قمم لتمكين القيادات الواعدة.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="story-milestone">
+                            <h3 data-ar="• الجوائز:" data-en="• Awards:">• الجوائز:</h3>
+                            <ul>
+                                <li data-ar="جائزة الأميرة صيتة - المركز الأول، 2018." data-en="Princess Seetah Award - First Place, 2018.">
+                                    جائزة الأميرة صيتة - المركز الأول، 2018.
+                                </li>
+                                <li data-ar="جائزة وعي - المركز الأول، وزارة الصحة، 2018." data-en="Wa'ai Award - First Place, Ministry of Health, 2018.">
+                                    جائزة وعي - المركز الأول، وزارة الصحة، 2018.
+                                </li>
+                                <li data-ar="جائزة طبيب الامتياز الأفضل في التواصل، 2019." data-en="Doctor of Excellence Award for Best Communication, 2019.">
+                                    جائزة طبيب الامتياز الأفضل في التواصل، 2019.
+                                </li>
+                                <li data-ar="جائزة أم الجود للتوعية، 2022." data-en="Umm Al-Joud Award for Awareness, 2022.">
+                                    جائزة أم الجود للتوعية، 2022.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="story-milestone">
+                            <h3 data-ar="• تمثيل المملكة:" data-en="• Representing Saudi Arabia:">• تمثيل المملكة:</h3>
+                            <ul>
+                                <li data-ar="برنامج القيادات الإعلامية العربية الشابة، الإمارات 2018." data-en="Young Arab Media Leaders Program, UAE 2018.">
+                                    برنامج القيادات الإعلامية العربية الشابة، الإمارات 2018.
+                                </li>
+                                <li data-ar="سفير برنامج MBC الأمل، 2018." data-en="MBC Al-Amal Program Ambassador, 2018.">
+                                    سفير برنامج MBC الأمل، 2018.
+                                </li>
+                                <li data-ar="منتدى شباب العالم، مصر 2019." data-en="World Youth Forum, Egypt 2019.">
+                                    منتدى شباب العالم، مصر 2019.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="story-milestone">
+                            <h3 data-ar="• أقرب محاضرة لقلبي:" data-en="• Dearest to My Heart:">• أقرب محاضرة لقلبي:</h3>
+                            <p class="highlight-text" data-ar="'أسمع العالم صوتك' - TEDxKAU، جامعة الملك عبدالعزيز." data-en="'Let the World Hear Your Voice' - TEDxKAU, King Abdulaziz University.">
+                                "أسمع العالم صوتك" - TEDxKAU، جامعة الملك عبدالعزيز.
+                            </p>
+                        </div>
+
+                        <div class="story-milestone">
+                            <h3 data-ar="• ورش العمل:" data-en="• Workshops:">• ورش العمل:</h3>
+                            <ul>
+                                <li data-ar="مسك المهارات | TEDx طيبة | مؤتمر التطوع | ورش التوعية الصحية (2019-2022)" data-en="Misk Skills | TEDx Taibah | Volunteer Conference | Health Awareness Workshops (2019-2022)">
+                                    مسك المهارات | TEDx طيبة | مؤتمر التطوع | ورش التوعية الصحية (2019-2022)
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="story-card story-closing-card">
+                            <p class="story-highlight" data-ar="'روتين التسعين' هو المشروع الأهم لمسافة ومجتمعها." data-en="'The 90-Day Routine' is the most significant project for Masafah and its community.">
+                                "روتين التسعين" هو المشروع الأهم لمسافة ومجتمعها.
+                            </p>
+                            <p class="story-final" data-ar="وكلّ هذا بفضل الله وكرمه؛ وبإذنه، فالرحلة تستمر..." data-en="All of this is thanks to Allah's grace; and by His will, the journey continues...">
+                                وكلّ هذا بفضل الله وكرمه؛<br>
+                                وبإذنه، فالرحلة تستمر...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
